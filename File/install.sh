@@ -8,6 +8,14 @@ set -euo pipefail
 
 echo "Roblox for Linux Installer (Fedora)"
 echo "-----------------------------------"
+echo "a part of"
+echo "███████╗██╗   ██╗██████╗  █████╗ ██╗   ██╗    ██╗  ██╗██╗   ██╗██████╗ 
+██╔════╝╚██╗ ██╔╝██╔══██╗██╔══██╗██║   ██║    ██║  ██║██║   ██║██╔══██╗
+███████╗ ╚████╔╝ ██████╔╝███████║██║   ██║    ███████║██║   ██║██████╔╝
+╚════██║  ╚██╔╝  ██╔══██╗██╔══██║██║   ██║    ██╔══██║██║   ██║██╔══██╗
+███████║   ██║   ██████╔╝██║  ██║╚██████╔╝    ██║  ██║╚██████╔╝██████╔╝
+╚══════╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ 
+                                                                       "
 sleep 5
 # Function to prompt yes/no
 ask_or_exit() {
@@ -50,7 +58,5 @@ sleep 3
 echo "give me a three seconds to give permission update required for Sober!"
 flatpak override --user --device=input org.vinegarhq.Sober
 sleep 3
-echo ""
-ask_or_exit "Would you want to install Spotify, OBS, Chrome (Stable, Dev, Chromium) and Discord?"
-curl -sSL https://github.com/vnVoPhong/Ok/blob/main/File/install-app.sh | sh
+echo "Goonbye."
 sleep 3
