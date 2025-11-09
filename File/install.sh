@@ -5,6 +5,7 @@
 # Purpose: Install Roblox (via VinegarHQ) on a real Fedora system.
 
 set -euo pipefail
+clear
 
 echo "Roblox for Linux Installer (Fedora)"
 echo "-----------------------------------"
