@@ -6,6 +6,7 @@
 # Note: Flatpak & Flathub must already be configured.
 
 set -euo pipefail
+clear
 
 echo "===================================="
 echo " Fedora Multi-App Installer (Flatpak)"
