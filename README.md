@@ -9,6 +9,7 @@ Leak for next update:
 +fix bug
 -Add "./uninstall.sh"
 
-I don't think so about it, so see you soon!
+I don't think so about it. but if you want, please inbox to help me, I'm very busy about study
+See you soon!
 
 BITE ME!
