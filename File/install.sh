@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # Roblox Installer for Fedora Linux
-# Author: ChatGPT (for gnohP)
+# Author: gnohP
 # Version: 1.0
-# Purpose: Install Roblox (via VinegarHQ) on a real Fedora system.
+# Purpose: Install Roblox (via VinegarHQ)
 
 set -euo pipefail
 clear
 
-echo "Roblox for Linux Installer (Fedora)"
-echo "-----------------------------------"
+echo "Roblox for Linux Installer"
+echo "--------------------------"
 echo "a part of"
 echo "███████╗██╗   ██╗██████╗  █████╗ ██╗   ██╗    ██╗  ██╗██╗   ██╗██████╗ 
 ██╔════╝╚██╗ ██╔╝██╔══██╗██╔══██╗██║   ██║    ██║  ██║██║   ██║██╔══██╗
@@ -24,7 +24,7 @@ ask_or_exit() {
   read -r -p "$question [y/n]: " ans
   case "$ans" in
     [yY]) return 0 ;;
-    *) echo "Cancelled."; exit 0 ;;
+    *) echo "Goonbye.🥵🥵🥵🥵"; exit 0 ;;
   esac
 }
 # Step 1: Install Flatpak and Flathub
@@ -36,10 +36,11 @@ sleep 3
 # Step 2: Install Roblox (VinegarHQ)
 ask_or_exit "Would you like to install Roblox (VinegarHQ)?"
 echo "Note: Make sure you have logged into Roblox on your web browser first."
+sleep 3
 read -r -p "Continue installation? [y/n]: " confirm
 case "$confirm" in
   [yY])
-    flatpak install flathub org.vinegarhq.Sober
+    flatpak install flathub org.vinegarhq.Sober -y
     echo "Roblox installation completed successfully."
     ;;
   *)
@@ -59,5 +60,13 @@ sleep 3
 echo "give me a three seconds to give permission update required for Sober!"
 flatpak override --user --device=input org.vinegarhq.Sober
 sleep 3
-echo "Goonbye."
+echo "Done."
 sleep 3
+read -r -p "Would you want to install something? [y/n]: " confirm
+case "$confirm" in
+  [yY])
+    echo "Trying to bypass Shell and give permission..."
+    sleep 2
+    chmod +x ./install-app.sh && ./install-app.sh
+    ;;
+esac
